@@ -46,7 +46,8 @@ $server = new \League\OAuth2\Server\AuthorizationServer(
     $accessTokenRepository,
     $scopeRepository,
     $privateKey,
-    $encryptionKey
+    $encryptionKey,
+    new BearerTokenResponse
 );
 
 // OpenID Connect Authorization Code Grant
